@@ -1,0 +1,76 @@
+:root {
+    --primary: #0061ff;
+    --secondary: #60a5fa;
+}
+
+body { font-family: 'Inter', sans-serif; transition: all 0.3s ease; }
+
+/* Header & Name Fix */
+.hero-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+    color: #212529; /* Standard Schwarz für Light Mode */
+}
+
+/* Fix für Textfarbe in Dark Mode */
+[data-bs-theme="dark"] .hero-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+}
+
+.header-title {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Kreativer Download Button */
+.creative-download-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--primary);
+    color: white !important;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 97, 255, 0.3);
+}
+
+.creative-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 97, 255, 0.4);
+    background: #0056e0;
+}
+
+.btn-icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.creative-download-btn:hover .btn-icon {
+    transform: translateY(3px);
+}
+
+/* Fortschrittsbalken */
+.progress { height: 8px; border-radius: 10px; background: rgba(0,0,0,0.05); }
+.progress-bar { background: var(--primary); border-radius: 10px; }
+
+/* Karten */
+.card { transition: transform 0.3s ease; border-radius: 15px !important; }
+.card-hover:hover { transform: scale(1.02); }
+
+.footer-modern {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    color: #64748b;
+}
